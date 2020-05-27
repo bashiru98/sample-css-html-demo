@@ -1,0 +1,130 @@
+:root {
+    --primary:#ddd;
+    --dark:#333;
+    --light:#fff;
+    --shadow:0 1px 5px rgba(104,104,104,0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+body {
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+    
+}
+.wraper {
+    display:grid;
+    grid-gap:20px;
+
+}
+
+.navpart ul {
+    display:grid;
+    grid-gap:20px;
+    padding:0;
+    list-style: none;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.navpart a {
+    background: var(--primary);
+    display:block;
+    text-decoration: none;
+    padding:0.8rem;
+    text-align: center;
+    color:var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+
+}
+
+.navpart a:hover {
+    background: var(--dark);
+    color:var(--light);
+
+}
+
+.top-container {
+    display:grid;
+    grid-gap:20px;
+    grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+.showcase {
+    grid-area:showcase;
+    background: url(img/car.jpg);
+    background-size:cover;
+    background-position: center;
+    padding:3rem;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+
+}
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color:var(--light);
+
+}
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color:var(--light);
+    
+}
+.top-box-a {
+    grid-area:top-box-a;
+}
+.top-box-b {
+    grid-area:top-box-b;
+}
+.btn {
+    background: var(--dark);
+    color:var(--light);
+    padding:0.6rem 1.3rem;
+    text-decoration:none;
+    border:0;
+}
+.second-item ul p{
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+.second-item ul li a{
+    text-decoration: none;
+}
+
+.market-a p{
+    display:grid;
+    background: var(--primary);
+    width: 15%;
+    font-size: 1.5rem;
+}
+.boxes {
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+
+}
+button:hover {
+    cursor: pointer;
+}
+span {
+    padding: 0px 0px 0px 0.5rem;
+    color: #686868;
+}
+input {
+    padding: 0px 0px 0px 1.3rem;
+    background:blanchedalmond ;
+    margin: 5px;
+  
+}
